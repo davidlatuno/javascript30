@@ -10,11 +10,11 @@
 <body>
     <script>
         const pressed = [];
-        const secretCode = '38384040373937396665';
+        const secretCode = 'chris';
 
         window.addEventListener('keyup', (e) => {
             // console.log(e);
-            pressed.push(e.which);
+            pressed.push(e.key);
             pressed.splice(-11, pressed.length - 10);
             if (pressed.join('').includes(secretCode)) {
                 console.log('DING DING!');
